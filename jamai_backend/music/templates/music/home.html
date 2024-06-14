@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JamAI Music - Home</title>
+</head>
+<body>
+    <h1>Welcome to JamAI Music</h1>
+    <div>
+        <button onclick="location.href='{% url 'create_song' %}'">Create New Song</button>
+        <button onclick="location.href='{% url 'join_session' %}'">Join a Session</button>
+    </div>
+    <div>
+        <h2>Select Your Instrument</h2>
+        <select>
+            <option value="guitar">Guitar</option>
+            <option value="piano">Piano</option>
+            <option value="drums">Drums</option>
+            <!-- Add more instruments as needed -->
+        </select>
+    </div>
+    <div>
+        <h2>Select Music Style</h2>
+        <select>
+            <option value="rock">Rock</option>
+            <option value="jazz">Jazz</option>
+            <option value="classical">Classical</option>
+            <!-- Add more styles as needed -->
+        </select>
+    </div>
+</body>
+</html>
