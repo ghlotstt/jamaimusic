@@ -14,3 +14,7 @@ def join_session(request):
 def song_list(request):
     songs = Song.objects.all()
     return render(request, 'music/song_list.html', {'songs': songs})
+
+# Nueva vista para explorar sin conocimientos musicales
+def explore_without_knowledge(request):
+    return render(request, 'music/explore_without_knowledge.html')

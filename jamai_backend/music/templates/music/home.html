@@ -11,10 +11,27 @@
     <div class="container">
         <h1>Welcome to JamAI Music</h1>
         <p>JamAI Music is a real-time collaborative music creation platform that leverages AI to enhance the music-making process. Whether you're a musician, producer, or just a music enthusiast, you can join sessions, create new songs, and collaborate with others in real time. Our AI helps synchronize and harmonize contributions from all participants, making the music creation process seamless and enjoyable.</p>
-        <div>
+        
+        <div class="intro">
+            <h2>New to Music? No Problem!</h2>
+            <p>JamAI Music uses artificial intelligence to help you create music, even if you've never played an instrument. Explore different sounds, play with virtual instruments, and discover the magic of music creation.</p>
+            <button onclick="location.href='{% url 'explore_without_knowledge' %}'">Explore Without Knowing Music</button>
+        </div>
+        
+        <div class="intro">
+            <h2>Hello Music Lover!</h2>
+            <p>If you already play an instrument or enjoy music, JamAI Music is the perfect place to enhance your skills and collaborate with other musicians. Create new songs, join live sessions, and let our AI help harmonize your ideas.</p>
             <button onclick="location.href='{% url 'create_song' %}'">Create New Song</button>
             <button onclick="location.href='{% url 'join_session' %}'">Join a Session</button>
         </div>
+        
+        <div class="intro">
+            <h2>Hello Experienced Musician!</h2>
+            <p>JamAI Music offers you a world of possibilities to explore new ways of creating music. Use our AI to compose, produce, and collaborate in real time with other musicians. Take your skills to the next level and discover what you can achieve with advanced technology.</p>
+            <button onclick="location.href='{% url 'create_song' %}'">Create New Song</button>
+            <button onclick="location.href='{% url 'join_session' %}'">Join an Advanced Session</button>
+        </div>
+
         <div>
             <h2>Select Your Instrument</h2>
             <select>

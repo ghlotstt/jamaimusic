@@ -7,4 +7,5 @@ urlpatterns = [
     path('songs/', views.song_list, name='song_list'),
     path('create/', views.create_song, name='create_song'),
     path('join/', views.join_session, name='join_session'),
+    path('explore/', views.explore_without_knowledge, name='explore_without_knowledge'),
 ]

@@ -7,31 +7,36 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 .container {
     text-align: center;
     background: #fff;
-    padding: 2em;
+    padding: 1em;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    overflow-y: auto;
+    max-height: 100vh;
 }
 h1 {
     color: #333;
+    font-size: 1.5em;
 }
 p {
     color: #666;
-    font-size: 16px;
+    font-size: 14px;
     margin: 10px 0;
 }
 button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 5px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
 }
 button:hover {
     background-color: #45a049;
@@ -39,5 +44,9 @@ button:hover {
 select {
     padding: 10px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 14px;
+}
+.intro {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
