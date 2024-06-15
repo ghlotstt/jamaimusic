@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,19 +37,116 @@
             <select>
                 <option value="guitar">Guitar</option>
                 <option value="piano">Piano</option>
-                <option value="drums">Drums</option>
+                <option value="drums">Drums</option>-->
                 <!-- Add more instruments as needed -->
-            </select>
+            <!--</select>
         </div>
         <div>
             <h2>Select Music Style</h2>
             <select>
                 <option value="rock">Rock</option>
                 <option value="jazz">Jazz</option>
-                <option value="classical">Classical</option>
+                <option value="classical">Classical</option>-->
                 <!-- Add more styles as needed -->
-            </select>
+            <!--</select>
+        </div>
+    </div>
+</body>
+</html>-->
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JamAI Music - Home</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/home.js' %}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="section" id="left-section">
+            <img src="{% static 'icons/inexpert.png' %}" alt="Inexperts">
+            <div class="content">
+                <h2>New to Music? No Problem!</h2>
+                <p>JamAI Music uses artificial intelligence to help you create music, even if you've never played an instrument. Explore different sounds, play with virtual instruments, and discover the magic of music creation.</p>
+                <button onclick="location.href='{% url 'explore_without_knowledge' %}'">Explore Without Knowing Music</button>
+            </div>
+        </div>
+        <div class="section" id="center-section">
+            <img src="{% static 'icons/amateur.png' %}" alt="Amateurs">
+            <div class="content">
+                <h2>Hello Music Lover!</h2>
+                <p>If you already play an instrument or enjoy music, JamAI Music is the perfect place to enhance your skills and collaborate with other musicians. Create new songs, join live sessions, and let our AI help harmonize your ideas.</p>
+                <button onclick="location.href='{% url 'create_song' %}'">Create New Song</button>
+                <button onclick="location.href='{% url 'join_session' %}'">Join a Session</button>
+            </div>
+        </div>
+        <div class="section" id="right-section">
+            <img src="{% static 'icons/expert.png' %}" alt="Experts">
+            <div class="content">
+                <h2>Hello Experienced Musician!</h2>
+                <p>JamAI Music offers you a world of possibilities to explore new ways of creating music. Use our AI to compose, produce, and collaborate in real time with other musicians. Take your skills to the next level and discover what you can achieve with advanced technology.</p>
+                <button onclick="location.href='{% url 'create_song' %}'">Create New Song</button>
+                <button onclick="location.href='{% url 'join_session' %}'">Join an Advanced Session</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JamAI Music - Home</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/home.js' %}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="section" id="left-section">
+            <img src="{% static 'icons/inexpert.png' %}" alt="Inexperts">
+            <div class="content">
+                <h2>New to Music?</h2>
+                <p>JamAI helps you create music with AI.</p>
+                <button onclick="location.href='{% url 'explore_without_knowledge' %}'">Explore Without Knowing Music</button>
+            </div>
+        </div>
+        <div class="section" id="center-section">
+            <img src="{% static 'icons/amateur.png' %}" alt="Amateurs">
+            <div class="content">
+                <h2>Hello Music Lover!</h2>
+                <p>Enhance your skills and collaborate with others.</p>
+                <button onclick="location.href='{% url 'create_song' %}'">Create New Song</button>
+                <button onclick="location.href='{% url 'join_session' %}'">Join a Session</button>
+            </div>
+        </div>
+        <div class="section" id="right-section">
+            <img src="{% static 'icons/expert.png' %}" alt="Experts">
+            <div class="content">
+                <h2>Experienced Musician?</h2>
+                <p>Explore new ways of creating music with AI.</p>
+                <button onclick="location.href='{% url 'create_song' %}'">Create New Song</button>
+                <button onclick="location.href='{% url 'join_session' %}'">Join an Advanced Session</button>
+            </div>
         </div>
     </div>
 </body>
 </html>
+
+
+

@@ -10,43 +10,80 @@ body {
     overflow: hidden;
 }
 .container {
-    text-align: center;
-    background: #fff;
-    padding: 1em;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-    overflow-y: auto;
-    max-height: 100vh;
+    display: flex;
+    width: 100%;
+    height: 100vh;
 }
-h1 {
-    color: #333;
-    font-size: 1.5em;
+.section {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-p {
-    color: #666;
-    font-size: 14px;
+.section img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.section:hover {
+    background-color: #e0e0e0;
+}
+.section:hover img {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.5;
+}
+.section .content {
+    position: absolute;
+    top: 20%; /* Ajustar para que la imagen no interfiera con el contenido */
+    left: 10%;
+    right: 10%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.section:hover .content {
+    opacity: 1;
+}
+.section .content h2, .section .content p {
+    font-size: 1em;
     margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+    width: 0;
+    display: inline-block;
+}
+.section .content h2 {
+    animation: typing 2s steps(20, end) forwards, blink 0.75s step-end infinite;
+}
+.section .content p {
+    animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
 }
 button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
-    margin: 5px;
+    margin: 10px 0;
     border: none;
     cursor: pointer;
     font-size: 14px;
+    display: block;
+    width: auto;
+    white-space: nowrap;
 }
 button:hover {
     background-color: #45a049;
 }
-select {
-    padding: 10px;
-    margin: 10px;
-    font-size: 14px;
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
-.intro {
-    margin-top: 10px;
-    margin-bottom: 10px;
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black }
 }
